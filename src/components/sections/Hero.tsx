@@ -21,7 +21,7 @@ export const Hero = () => {
           </div>
           
           <h1 className="heading-xl mb-6 text-balance text-white">
-            Bold Strategies. Powerful Growth. Unmatched Results.
+            Efficient Strategies. Powerful Growth. Unmatched Results.
           </h1>
           
           <p className="paragraph text-white/90 mb-10 max-w-2xl mx-auto">
