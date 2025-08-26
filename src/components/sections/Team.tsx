@@ -54,7 +54,7 @@ export const Team = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-             <div className="p-6">
+             <div className="p-5">
                 <h3 className="font-bold text-lg mb-1">{member.name}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{member.position}</p>
                 <div className="flex space-x-3">
