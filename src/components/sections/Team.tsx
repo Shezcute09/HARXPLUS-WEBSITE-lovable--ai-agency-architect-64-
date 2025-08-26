@@ -13,7 +13,7 @@ const teamMembers = [
     image: "/placeholder.svg"
   },
   {
-    name: "Ndubueze Dennis",
+    name: "Dennis Ndubueze",
     position: "Marketing and Product Lead",
     image: "/placeholder.svg"
   },
