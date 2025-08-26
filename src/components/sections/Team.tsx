@@ -6,21 +6,29 @@ const teamMembers = [
     name: "David Chima",
     position: "Managing Partner",
     image: "/placeholder.svg"
+    linkedin: "https://www.linkedin.com/in/david-chima-b65b50175/",
+    twitter: "https://x.com/Realdavidchima"
   },
   {
     name: "Cyrus Nnaji",
     position: "Lead Business Developer",
     image: "/placeholder.svg"
+    linkedin: "https://www.linkedin.com/in/cyrus-nnaji-b1a985174/",
+    twitter: "https://x.com/Kentucky_sailor"
   },
   {
     name: "Dennis Ndubueze",
     position: "Marketing and Product Lead",
     image: "/placeholder.svg"
+    linkedin: "https://www.linkedin.com/in/dennis-ndubueze/",
+    twitter: "https://ihttps://x.com/Dennisndubueze"
   },
   {
     name: "Ogunka Odilia",
     position: "Growth Lead",
     image: "/placeholder.svg"
+    linkedin: "https://linkedin.com/in/cyrusnnaji",
+    twitter: "https://twitter.com/cyrusnnaji"
   }
 ];
 
@@ -46,16 +54,31 @@ export const Team = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
+             <div className="p-6">
                 <h3 className="font-bold text-lg mb-1">{member.name}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{member.position}</p>
                 <div className="flex space-x-3">
-                  <a href="#" className="text-primary hover:text-primary/80">
-                    <Linkedin className="h-5 w-5" />
-                  </a>
-                  <a href="#" className="text-primary hover:text-primary/80">
-                    <Twitter className="h-5 w-5" />
-                  </a>
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      className="text-primary hover:text-primary/80"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      aria-label={`${member.name} on LinkedIn`}
+                    >
+                      <Linkedin className="h-5 w-5" />
+                    </a>
+                  )}
+                  {member.twitter && (
+                    <a
+                      href={member.twitter}
+                      className="text-primary hover:text-primary/80"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      aria-label={`${member.name} on Twitter`}
+                    >
+                      <Twitter className="h-5 w-5" />
+                    </a>
                 </div>
               </div>
             </div>
